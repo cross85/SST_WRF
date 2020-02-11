@@ -13,4 +13,4 @@ It consists of three source files:
 * **mod_wrf_writer.f90** contains the routine to safely copy the data, and a routine to write all the data into a WRF intermediary file.
   The method of writing is basically a copy of http://www2.mmm.ucar.edu/wrf/users/docs/user_guide/users_guide_chap3.html#_Writing_Meteorological_Data.
 
-This program ia based on the program written by @coecms for Soil Moisture https://github.com/coecms/Soil_Moisture_WRF
+This program is based on the program written by @coecms for Soil Moisture https://github.com/coecms/Soil_Moisture_WRF
