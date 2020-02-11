@@ -12,13 +12,13 @@ MOD_FILES = $(patsubst %.f90,%.o,$(wildcard mod*f90))
 .f90.o : 
 	$(FC) $(FFLAGS) -o $@ $<
 
-Soil_Moisture : main.o $(MOD_FILES)
+SST : main.o $(MOD_FILES)
 	$(LD) $(LFLAGS) -o $@ $^
 
 main.o : $(MOD_FILES)
 
 clean:
-	rm -rf Soil_Moisture *.o *.mod
+	rm -rf SST *.o *.mod
 
 debug:
 	@echo $(MOD_FILES)
